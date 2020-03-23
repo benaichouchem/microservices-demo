@@ -17,7 +17,7 @@ package money
 import (
 	"errors"
 
-	pb "github.com/benaichouchem/microservices-demo/src/checkoutservice/genproto"
+	pb "github.com/benahouchem/microservices-demo/src/checkoutservice/genproto"
 )
 
 const (
