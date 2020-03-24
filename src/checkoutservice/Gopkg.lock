@@ -32,16 +32,7 @@
   revision = "286eee16b147a302ddc7b10740c5e5401ebbec17"
   source = "github.com/apache/thrift"
 
-[[projects]]
-  digest = "1:4287343c81d259e828b2e3b579270139a498a2168fbab81d89c3b9926b4ec740"
-  name = "github.com/benaichouchem/microservices-demo"
-  packages = [
-    "src/checkoutservice/genproto",
-    "src/checkoutservice/money",
-  ]
-  pruneopts = "UT"
-  revision = "27df445fc20f048c1c31e429f6c29075119fe454"
-  version = "v0.1.1"
+
 
 [[projects]]
   digest = "1:1d3ad0f6a57c08e2168089a64c34313930571fcbe5359d71c608a97ce504f7ca"
