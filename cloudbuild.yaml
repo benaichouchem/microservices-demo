@@ -25,7 +25,7 @@ steps:
   - functions
   - deploy
   - Function
-  - --source=./src/analytics
+  - --source=.
   - --trigger-http
 # Add more power, and more time, for heavy Skaffold build
 timeout: '3600s'
