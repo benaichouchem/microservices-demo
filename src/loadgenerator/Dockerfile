@@ -14,8 +14,10 @@ FROM base
 COPY --from=builder /install /usr/local
 
 COPY . .
-RUN chmod +x ./loadgen.sh
+RUN chmod +x ./loadgen.sh 
 RUN apt-get -qq update \
     && apt-get install -y --no-install-recommends \
         curl
+
+ENV FRONTEND_ADDR=35.204.223.24
 ENTRYPOINT ./loadgen.sh
