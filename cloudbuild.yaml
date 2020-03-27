@@ -26,6 +26,7 @@ steps:
   - deploy
   - Function
   - --source=.
+  - --runtinme dotnet
   - --trigger-http
 # Add more power, and more time, for heavy Skaffold build
 timeout: '3600s'
