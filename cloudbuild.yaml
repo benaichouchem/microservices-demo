@@ -20,7 +20,7 @@ steps:
     skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID;
 
 
--id: 'Deploy Analytics Cloud function'
+- id: 'Deploy Analytics Cloud function'
   name: 'gcr.io/cloud-builders/gcloud'
     args:
     - functions
