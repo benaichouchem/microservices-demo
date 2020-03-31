@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 
 namespace analytics
 {
-    public class Function : IHttpFunction
+    public class SendToBQ : IHttpFunction
     {
         /// <summary>
         /// Logic for your function goes here.

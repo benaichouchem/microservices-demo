@@ -18,17 +18,9 @@ steps:
   - > 
     gcloud container clusters get-credentials --zone=europe-west4-a hipster-dev;
     skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID;
+    gcloud run deploy --image gcr.io/hipster-dev/analytics --platform managed
 
-- id: 'Deploy Analytics Cloud function'
-  name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - functions
-  - deploy
-  - Function
-  - --source=.
-  - --runtime dotnet
-  - --trigger-http
 # Add more power, and more time, for heavy Skaffold build
 timeout: '3600s'
 options:
-  machineType: 'N1_HIGHCPU_8'
+  machineType: 'N1_HIGHCPU_16'
