@@ -21,6 +21,6 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine AS runtime
 WORKDIR /app
 COPY --from=build /app/out ./
-ENV FUNCTION_TARGET Analytics.SendToBQ
+ENV FUNCTION_TARGET analytics.SendToBQ
 # Run the web service on container startup.
-ENTRYPOINT ["dotnet", "analytics.dll"]
+ENTRYPOINT ["dotnet", "Analytics.dll"]
