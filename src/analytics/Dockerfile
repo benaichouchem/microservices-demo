@@ -23,4 +23,4 @@ WORKDIR /app
 COPY --from=build /app/out ./
 #ENV FUNCTION_TARGET="SendToBQ"
 # Run the web service on container startup.
-ENTRYPOINT ["dotnet", "analytics-csharp.dll"]
+ENTRYPOINT ["dotnet", "analytics.dll"]
