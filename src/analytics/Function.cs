@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 
 namespace analytics
 {
+    
     public class SendToBQ : IHttpFunction
     {
         /// <summary>
