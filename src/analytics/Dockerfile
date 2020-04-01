@@ -25,4 +25,4 @@ ENV FUNCTION_TARGET Analytics.SendToBQ
 
 #
 # Run the web service on container startup.
-ENTRYPOINT ["dotnet", "analytics.dll"]
+ENTRYPOINT ["dotnet", "Analytics.dll"]
