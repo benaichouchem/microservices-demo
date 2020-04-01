@@ -17,7 +17,7 @@ steps:
   - '-c'
   - > 
     gcloud container clusters get-credentials --zone=europe-west4-a hipster-dev;
-    skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID;
+    skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID --tag=latest;
 
 - id: 'deploy to cloud run'
   name: 'gcr.io/cloud-builders/gcloud'
@@ -26,7 +26,7 @@ steps:
   - 'deploy'
   - 'analytics'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/analytics:latest'
+  - 'gcr.io/$PROJECT_ID/analytics'
   - '--region'
   - 'europe-west4'
   - '--platform'
