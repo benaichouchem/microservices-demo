@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-     <RootNamespace>Analytics</RootNamespace>
+     <RootNamespace>analytics</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

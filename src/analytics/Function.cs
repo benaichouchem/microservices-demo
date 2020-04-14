@@ -16,7 +16,7 @@ using Google.Cloud.Functions.Framework;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 
-namespace analytics
+namespace Analytics
 {
     
     public class SendToBQ : IHttpFunction
